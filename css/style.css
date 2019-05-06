@@ -8,14 +8,16 @@ html, body {
     position:absolute;
     width:100%;
     min-height:100%;
+    /* Necessary for min-height calculation on content */
     height:100%;
 }
 #content {
-    /* top left <right> bottom */
+    /* top left <right> bottom; horizontally centers div */
     margin:50px auto 0;
     padding:15px;
     max-width:1500px;
     background-color:white;
+    /* screen height - footer height - header height - content padding */
     min-height:calc(100% - 100px - 50px - 30px);
 }
 #footer {

@@ -41,6 +41,7 @@
     top:0;
     left:0;
     width:100%;
+    box-shadow: 0 -50px 15px 50px rgb(60, 60, 60);
 }
 
 /* Prevent images from overflowing the bar and make them float with menu elements */
