@@ -2,6 +2,8 @@ html, body {
 	padding: 0;
     margin: 0;
     background-color:#dedede;
+    /* Background image generated with the open source Circuit Board Generator by Ben Matthews: https://codepen.io/tsuhre/details/xgmEPe */
+    background-image: url(../assets/bg.png);
     min-height:100%;
 }
 #container {
