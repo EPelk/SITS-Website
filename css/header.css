@@ -4,14 +4,16 @@
 
 /* Main properties */
 #header {
-    background-color: #232323; /* Color of header bar and primary items */
-    height:50px; /* Height of bar and submenu items */
-    color:white;
+    background-color: #6c6bb5; /* Color of header bar and primary items */
+    height:60px; /* Height of bar and submenu items */
+    font-size:20px;
+    color:#edebec;
+    font-family:Raleway, Arial;
 }
 
 /* Color of primary header items on mouse over */
 #header a:hover, #header div a:first-child:hover {
-    background-color:#555555 !important; /* The "!important" allows the topmost element of submenus (the one on the primary bar) to override the below rule. */
+    background-color:#7991bc !important; /* The "!important" allows the topmost element of submenus (the one on the primary bar) to override the below rule. */
                                          /* This is unrelated to the "!important" attribute in the below rule. */
 }
 
@@ -23,7 +25,7 @@
 
 /* Color of submenu items on mouse over. Cannot be set to inherit. */
 #header div a:hover {
-    background-color:#555555 !important; /* The "!important" is necessary to override the "!important" rule above for submenus. */
+    background-color:#7991bc !important; /* The "!important" is necessary to override the "!important" rule above for submenus. */
 }
 
 

@@ -1,0 +1,405 @@
+/*
+  DJ Turn Table: Universal Style-Sheet
+
+	Filename: Styles-Universal.css
+
+	Author:   Nina Paquette
+	Date:     March 15,2019
+
+	HTML5 and CSS3 Illustrated
+
+   ~~~Notes~~~
+   padding:top, right, bottom, left; padding: 0 0 0 0;
+  */
+
+
+
+	@font-face {
+    font-family: neon;
+    src: url(Neoneon.otf);
+  }
+
+
+
+	/* Reset format */
+html{
+	font-size:16px;
+}
+
+article, body, div, footer, header, h1, h2, p {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+
+	/* site background image/texture */
+.main-background {
+	background-color: #0d0d0d;
+	background-position: center;
+	background-size: cover;
+}
+
+
+
+	/* headings */
+h1 {
+   padding: 0.4em;
+   color: white;
+   text-align: center;
+}
+h2 {
+	padding: 0.4em 0.6em;
+}
+
+
+
+  /* Nav Bar and Logo*/
+
+/* Logo */
+.logo {
+
+  margin: 0px 5px;
+}
+
+  /* Nav Bar*/
+/* hyperlink style clear */
+a {
+  text-decoration: none;
+}
+
+/* Text style for everything */
+nav {
+  font-family: Verdana;
+  font-size: 18px;
+}
+
+/* bar style */
+ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d0d;
+  overflow: hidden;
+  list-style: none;
+}
+
+/* box style */
+li {
+  float: left;
+  display: block;
+}
+
+/* nav text positioning & color*/
+li a {
+  color: #98c94f;
+  padding: 20px 40px;
+  display: block;
+  text-align: center;
+}
+
+/* Current page your in*/
+.active {
+	background-color: #8bc33c;
+	color: black;
+	font-style: italic;
+}
+
+/* Far-side button*/
+.booking{
+	background-color: #3231ab;
+	color: #f4f9ec;
+}
+
+/* main hover color & effects */
+.main:hover,
+.main:focus-within {
+  background-color: #2a3b12;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* Far-side button hover*/
+.booking:hover {
+  background-color: #222277;
+  cursor: pointer;
+  font-style: italic;
+  transition: 0.3s;
+}
+
+/* remove tab control box */
+li:focus-within a {
+  outline: none;
+}
+
+/* actavates drop-down when hovering */
+.main:hover > ul, /* dropdown when hovering */
+.main:focus-within > ul, /* dropdown when hovering */
+.dropdown:hover, /* dropdown when hovering with tab */
+.dropdown:focus {  /* replace tab cntrol box with hover */
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+
+/* dropdown box hover color & effects */
+.dropdown-content:hover,
+.dropdown-content:focus-within {
+	background-color: #bbdb8a;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+/* dropdown box style & position*/
+.dropdown {
+	display: none;
+	position: absolute;
+	background-color: #d1e7b1;
+ 	font-style: italic;
+
+/* dropdown box size peramiters*/
+	min-width: 133px;
+ 	max-width: 180px;
+	width: auto;
+
+/* dropdown box shadow*/
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+
+/* dropdown box postion (directly under nav) */
+	top: 61px;
+}
+
+/* dropdown box orentation(vertical) */
+.dropdown-content{
+	width: 100%;
+}
+
+/* dropdown box style & positioning*/
+.dropdown-content a{
+ 	float: none;
+	color: black;
+	font-size: 16px;
+	padding: 12px 10px;
+	display: block;
+	text-align: left;
+}
+
+
+
+/* Heading Text neon */
+.neon-wrapper {
+ text-align: center;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ font-size: 30px;
+ color: white;
+ font-family: neon;
+}
+
+.neon-text {
+ font-family:neon;
+ font-size: 14rem;
+ color: #e8f3d8;
+}
+/* Heading Text neon shadow effect */
+.neon-text {
+	text-shadow:
+	.1vw 0vw .25vw #8bc33c, .2vw 0vw .25vw #8bc33c, .4vw 0vw .25vw #e8f3d8,
+	.1vw 0vw   0vw #aed576, .2vw 0vw   0vw #aed576, .4vw 0vw   0vw #aed576,
+	.1vw 0vw  .1vw #aed576, .2vw 0vw  .1vw #aed576, .4vw 0vw  .1vw #aed576,
+	.1vw 0vw   2vw #aed576, .2vw 0vw   2vw #aed576, .4vw 0vw   2vw #aed576,
+	.1vw 0vw   1vw #7db036, .2vw 0vw   1vw #7db036, .4vw 0vw   5vw #7db036;
+}
+
+
+
+/* Heading Text neon two */
+.neon-wrapper-two  {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: white;
+  font-family: 'Sacramento', cursive;
+}
+
+.neon-text-two {
+  font-family: 'Sacramento', cursive;
+  font-size: 14rem;
+  color: #e6e6e6;
+}
+ /* Heading Text neon shadow effect */
+.neon-text-two {
+  text-shadow:
+  .1vw 0vw .25vw #808080, .2vw 0vw .25vw #808080, .4vw 0vw .25vw #e6e6e6,
+  .1vw 0vw   0vw #a6a6a6, .2vw 0vw   0vw #a6a6a6, .4vw 0vw   0vw #a6a6a6,
+  .1vw 0vw  .1vw #a6a6a6, .2vw 0vw  .1vw #a6a6a6, .4vw 0vw  .1vw #a6a6a6,
+  .1vw 0vw   2vw #a6a6a6, .2vw 0vw   2vw #a6a6a6, .4vw 0vw   2vw #a6a6a6,
+  .1vw 0vw   1vw #737373, .2vw 0vw   1vw #737373, .4vw 0vw   5vw #737373;
+}
+
+
+
+/*review boxs*/
+.review {
+  float: center;
+  margin: 50px auto;
+  width: 80%;
+  background-color: #1a1a1a;
+  border-radius: 6px;
+  color: #ddedc4;
+	padding:10px 20px ;
+	text-align: center;
+  font-style: italic;
+}
+
+.review-title {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.review-qoute {
+  font-size: 18px;
+}
+
+.signature {
+  text-align: right;
+  font-size: 18px;
+}
+
+
+
+/*links*/
+/*
+a:link {
+  color: #f2f2f2;
+  background-color: transparent;
+
+}
+
+a:visited {
+  color: #7db036;
+  background-color: transparent;
+  text-decoration: underline;
+}
+*/
+
+
+
+	/* artical content box*/
+article {
+	width: 78%;
+  margin: auto;
+	padding:40px 10px 40px 10px;
+	background-color: #262626;
+}
+
+article p {
+	padding: 2px 20px 10px 0px;
+	font-size: 14px;
+	font-family:Verdana, Geneva, sans-serif ;
+}
+
+
+
+/* alternitive artical content box*/
+articleAlt {
+width: 78%;
+margin: auto;
+padding:40px 10px 40px 10px;
+background-image: linear-gradient(#0d0d0d, #262626);
+}
+
+articleAlt p {
+padding: 2px 20px 10px 0px;
+font-size: 14px;
+font-family:Verdana, Geneva, sans-serif ;
+}
+
+
+
+/* title text */
+.title-text
+{
+  float: center;
+  margin: 0px auto;
+  width: 80%;
+}
+
+.title-text p
+{
+	color: white;
+	padding:20px 30px ;
+	text-align: left;
+  font-family: 'Gugi', cursive;
+  font-size: 60px;
+}
+
+
+
+/* main content inner box*/
+.mainContent
+{
+    float: center;
+    margin: 10px auto 100px auto;
+    width: 80%;
+    background-color: #333333;
+    border-radius: 6px;
+
+}
+
+.mainContent p
+{
+	color: #f2f2f2;
+	padding:20px 30px ;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+}
+
+
+
+	/* footer */
+footer {
+	border-bottom: 1px solid #737373;
+	border-top: 1px solid #737373;
+	padding: 0.5px;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	clear: right;
+}
+footer p {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0.4em;
+	color:  #e8f3d8;
+}
+
+/* Footer Table Styles */
+.footer-table, .info, .logo, .foot-table {
+  border-collapse: collapse;
+  color:  #e6e6e6;
+  border: 20px solid #0d0d0d;
+  align: center;
+  table-layout: fixed;
+  text-align: center;
+}
+
+.foot-table {
+  height: 200px;
+}
+
+.logo{
+  width: 500px;
+}
+
+.info{
+  width: auto;
+  font-size: 20px;
+}
